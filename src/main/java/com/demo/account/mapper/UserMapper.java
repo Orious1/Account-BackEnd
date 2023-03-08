@@ -9,7 +9,7 @@ import java.util.List;
 public interface UserMapper {
 
     // 这时我们就可以通过@ResultMap()注解中传入Results注解的参数id来引用Results注解中的内容
-    // 例如使用@ResultMap(value = "userMapper")1
+    // 例如使用@ResultMap(value = "userMapper")
     @Results(id="userMapper" ,value={
             @Result(id = true,column = "uid",property = "uid"),
             @Result(column = "username",property = "userName"),
